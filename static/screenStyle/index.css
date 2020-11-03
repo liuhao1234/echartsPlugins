@@ -1,0 +1,509 @@
+@import 'normalize.css';
+/* 
+    本文件为大屏公用组件样式
+ */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 
+    大屏背景
+ */
+.screen-container{
+    background: #01103d;
+}
+
+/* 
+    大屏模块的外包标签，默认模块间距为10px，
+ */
+[class^="col-width"]{
+    box-sizing: border-box;
+    padding: 5px;
+}
+.row-wrap{
+    padding:0 5px;
+}
+/* 
+    大屏每个模块的宽，24栅格
+ */
+.col-width-1{
+    float: left;
+    width: calc(100%/24*1);
+}
+.col-width-2{
+    float: left;
+    width: calc(100%/24*2);
+}
+.col-width-3{
+    float: left;    
+    width: calc(100%/24*3);
+}
+.col-width-4{
+    float: left;    
+    width: calc(100%/24*4);
+}
+.col-width-5{
+    float: left;    
+    width: calc(100%/24*5);
+}
+.col-width-6{
+    float: left;    
+    width: calc(100%/24*6);
+}
+.col-width-7{
+    float: left;    
+    width: calc(100%/24*7);
+}
+.col-width-8{
+    float: left;    
+    width: calc(100%/24*8);
+}
+.col-width-9{
+    float: left;    
+    width: calc(100%/24*9);
+}
+.col-width-10{
+    float: left;
+    width: calc(100%/24*10);
+}
+.col-width-11{
+    float: left;
+    width: calc(100%/24*11);
+}
+.col-width-12{
+    float: left;
+    width: calc(100%/24*12);
+}
+.col-width-13{
+    float: left;
+    width: calc(100%/24*13);
+}
+.col-width-14{
+    float: left;
+    width: calc(100%/24*14);
+}
+.col-width-15{
+    float: left;
+    width: calc(100%/24*15);
+}
+.col-width-16{
+    float: left;
+    width: calc(100%/24*16);
+}
+.col-width-17{
+    float: left;
+    width: calc(100%/24*17);
+}
+.col-width-18{
+    float: left;
+    width: calc(100%/24*18);
+}
+.col-width-19{
+    float: left;
+    width: calc(100%/24*19);
+}
+.col-width-20{
+    float: left;
+    width: calc(100%/24*20);
+}
+.col-width-21{
+    float: left;
+    width: calc(100%/24*21);
+}
+.col-width-22{
+    float: left;
+    width: calc(100%/24*22);
+}
+.col-width-23{
+    float: left;
+    width: calc(100%/24*23);
+}
+.col-width-24{
+    float: left;
+    width: calc(100%);
+}
+/* 
+    大屏每个模块的高，24栅格
+ */
+.row-height-1{
+    height: calc(100%/24*1);
+}
+.row-height-2{
+    height: calc(100%/24*2);
+}
+.row-height-3{
+    height: calc(100%/24*3);
+}
+.row-height-4{
+    height: calc(100%/24*4);
+}
+.row-height-5{
+    height: calc(100%/24*5);
+}
+.row-height-6{
+    height: calc(100%/24*6);
+}
+.row-height-7{
+    height: calc(100%/24*7);
+}
+.row-height-8{
+    height: calc(100%/24*8);
+}
+.row-height-9{
+    height: calc(100%/24*9);
+}
+.row-height-10{
+    height: calc(100%/24*10);
+}
+.row-height-11{
+    height: calc(100%/24*11);
+}
+.row-height-12{
+    height: calc(100%/24*12);
+}
+.row-height-13{
+    height: calc(100%/24*13);
+}
+.row-height-14{
+    height: calc(100%/24*14);
+}
+.row-height-15{
+    height: calc(100%/24*15);
+}
+.row-height-16{
+    height: calc(100%/24*16);
+}
+.row-height-17{
+    height: calc(100%/24*17);
+}
+.row-height-18{
+    height: calc(100%/24*18);
+}
+.row-height-19{
+    height: calc(100%/24*19);
+}
+.row-height-20{
+    height: calc(100%/24*20);
+}
+.row-height-21{
+    height: calc(100%/24*21);
+}
+.row-height-22{
+    height: calc(100%/24*22);
+}
+.row-height-23{
+    height: calc(100%/24*23);
+}
+.row-height-24{
+    height: calc(100%);
+}
+
+
+/* 
+    大屏头部样式
+ */
+header{
+    background:url(./img/nav-bg.png) no-repeat left center;
+    background-size: auto 100%;
+    height: 60px;
+    position: relative;
+}
+header div.logo{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 100%;
+    width: 400px;
+}
+header div.logo span{
+    color: #08d1ea;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 60px;
+    padding-left: 44px;
+    background: url(./img/logo.png) no-repeat left center;
+    background-size: 40px auto;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 580px;
+    position: absolute;
+    top: 0;
+    left: 400px;
+}
+
+header nav span{
+    font-size: 14px;
+    padding:0 10px;
+    color:#1b98d6;
+    line-height:36px;
+    position:relative;
+    cursor:pointer;
+    user-select:none;
+}
+header nav span:after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 14px;
+    background: #1b98d6;
+    position: absolute;
+    left: -3px;
+    top: 50%;
+    margin-top: -7px;
+    transform: rotate(30deg);
+}
+header nav span:first-child:after{
+    display:none;
+}
+header nav span.active{
+    color:#14bde2;
+}
+header nav span.active:before{
+    content:"";
+    display:block;
+    width:100%;
+    height:10px;
+    position:absolute;
+    bottom:-4px;
+    left:0;
+    background:url(./img/nav-active.png) no-repeat center center;
+    background-size: contain;
+}
+div.timer{
+    width: 260px;
+    height: 48px;
+    text-align: left;
+    background: url(./img/timer-bg.png) no-repeat center center;
+    background-size: cover;
+}
+div.timer span{
+    color: #bbd6eb;
+    font-size: 20px;
+    line-height: 48px;
+    display: inline-block;
+    letter-spacing:8px;
+}
+div.timer span:nth-child(1){
+    margin-left: 21px;
+}
+div.timer span:nth-child(2){
+    margin-left: 7px;
+}
+div.timer span:nth-child(3){
+    margin-left: 7px;
+}
+div.timer.type02{
+    background: url(./img/timer-bg02.png) no-repeat center center;
+    background-size:cover;
+}
+div.timer.type02 span:nth-child(1){
+    margin-left: 76px;
+}
+
+/* 
+    大屏内容区域样式
+ */
+main{
+    height: calc(100vh - 60px);
+}
+
+
+/* 
+    大屏tab切换键样式
+*/
+.tabs span{
+    display: inline-block;
+    color: #0397e8;
+    line-height: 24px;
+    padding: 2px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    vertical-align: bottom;
+}
+.tabs.type01 span{
+    background: url(./img/tab-bg.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.tabs.type01 span.active{
+    color: #00fefb;
+    font-size: 15px;
+    padding: 4px 10px;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    -o-transition: all ease .3s;
+}
+.tabs.type02 span{
+    background: url(./img/title-text-border-bg.png) no-repeat center center;
+    padding-right: 30px;
+    margin-right: -5px;
+    background-size: 100% 100%;
+}
+.tabs.type02 span.active{
+    color: #00fefb;
+    background: url(./img/title-text-bg.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+/* 
+    大屏数字样式
+*/
+.number{
+    white-space: nowrap;
+    overflow: hidden;
+}
+.number b{
+    color: #00fefb;
+    margin: 0 -2px;
+}
+.number.number-bg b{
+    float: left;
+    margin: 0 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 32px;
+    background: url(./img/number-bg.png) no-repeat center center;
+    background-size: 100% 100%;
+    color: #00fefb;
+}
+.number.number-bg b i{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/* 
+    大屏模块边框样式
+ */
+.border-type01{
+    border-image-source: url(./img/border.png);
+    border-image-slice: 10;
+    border-image-repeat: stretch;
+    border-image-width: 10px;
+    border-image-outset: 5px;
+    border-style: solid;
+}
+.border-type02{
+    border-image-source: url(./img/border-type02.png);
+    border-image-slice: 20;
+    border-image-repeat: stretch;
+    border-image-width: 20px;
+    border-image-outset: 0px;
+    border-style: solid;
+}
+.border-type03{
+    border-image-source: url(./img/border-type03.png);
+    border-image-slice: 10;
+    border-image-repeat: repeat;
+    border-image-width: 10px;
+    border-image-outset: 0px;
+    border-style: solid;
+}
+
+
+/* 
+    大屏模块标题样式
+ */
+.section-title:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.section-title span{
+    float: left;
+    color: #0397e8;
+}
+.section-title.type01{
+    background: url(./img/title-line-bg.png) no-repeat left bottom;
+}
+.section-title.type01 span{
+    padding-right: 30px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 13px;
+    padding: 0 10px;
+    background: url(./img/title-text-bg.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.section-title.type02 span{
+    width: 160px;
+    height: 40px;
+    text-align: left;
+    line-height: 30px;
+    font-size: 14px;
+    padding-left: 14px;
+    color: #00fefb;
+    background: url(./img/title-text-type02-bg.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.section-title.type03{
+    height: 36px;
+    line-height: 36px;
+    background: url(./img/title-type03.png) repeat-y left top;
+    background-size: 100% auto;
+}
+.section-title.type03 span{
+    color: #a9ddee;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+/* 
+    大屏table样式
+ */
+table.screen-table{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #084a90;
+}
+table.screen-table tr:nth-child(odd){
+    background: #162E77;
+}
+table.screen-table tr td{
+    text-align: center;
+    padding: 8px 0;
+    font-size: 14px;
+    font-weight: normal;
+    color: #b4d7fa;
+}
+table.screen-table tr.table-title{
+    border-bottom: 1px solid #084a90;
+}
+
+/* 
+    饼图背景图,大小需根据实际情况调整
+*/
+.pie-chart-bg{
+    background: url(./img/pie-bg.png) no-repeat center center;
+    background-size: auto 88%;
+}
+.pie-chart-bg01{
+    background: url(./img/pie-bg01.png) no-repeat center center;
+    background-size: auto 88%;
+}
+.pie-chart-bg02{
+    background: url(./img/pie-bg02.png) no-repeat center center;
+    background-size: auto 88%;
+}
+.pie-chart-bg03{
+    background: url(./img/pie-bg03.png) no-repeat center center;
+    background-size: auto 88%;
+}
+.pie-chart-bg04{
+    background: url(./img/pie-bg04.png) no-repeat center center;
+    background-size: auto 88%;
+}
+
+/* 地图背景 */
+.map-bg-type01{
+    background: url(./img/earth-bg.png) no-repeat center bottom;
+    background-size: 100% auto;
+}
