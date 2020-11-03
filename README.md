@@ -1,2 +1,2 @@
 # echartsPlugins
- echarts图标封装
+ echarts部分图表封装
